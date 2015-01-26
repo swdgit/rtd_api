@@ -24,7 +24,7 @@ public class HelloVerticle extends Verticle {
         server.requestHandler(new Handler<HttpServerRequest>() {
           public void handle(final HttpServerRequest req) {
             req.response().putHeader("Content-Type", "text/plain");
-            req.response().end("hello, world");
+            req.response().end("More than just Hello World");
           }
         });
 
